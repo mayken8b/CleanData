@@ -52,14 +52,14 @@ activity5 <- gsub("6", "Laying", activity4)
 combined_data$ActivityID <- activity5
 
 # only mean and std columns
-mean_std_data <- combined_data[, c(1, 2, which(grepl("mean|std", features3)))]
+tidy_data <- combined_data[, c(1, 2, which(grepl("mean|std", features3)))]
 
 # melt/dcast means to produce a mean for each variable by activity and subject
-mean_std_data_melt <- melt(mean_std_data, id=c("ActivityID", "SubjectID"),
-                           measure.vars=colnames(mean_std_data)[3:81])
-mean_std_data_means <- dcast(mean_std_data_melt, 
+mean_std_data_melt <- melt(tidy_data, id=c("ActivityID", "SubjectID"),
+                           measure.vars=colnames(tidy_data)[3:81])
+summarized_tidy_data <- dcast(mean_std_data_melt, 
                              ActivityID + SubjectID ~ variable, mean)
 
 # write each of the two final tidy data sets to txt files
-write.table(mean_std_data, file = "wearables_mean_std_data.txt")
-write.table(mean_std_data_means, file = "wearables_final_tidy_means.txt")
+write.table(tidy_data, file = "wearables_mean_std_data.txt")
+write.table(summarized_tidy_data, file = "wearables_final_tidy_means.txt")
