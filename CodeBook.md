@@ -1,6 +1,5 @@
 # CodeBook for Tidying of Wearables Data from:
-# Human Activity Recognition Using Smartphones Dataset
-# Version 1.0
+# Human Activity Recognition Using Smartphones Dataset Version 1.0
 
 
 All data used in this analysis originate from:
