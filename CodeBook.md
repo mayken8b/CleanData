@@ -21,3 +21,10 @@ The data set and all the group's original explanations of the data (contained in
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
+# The Original Data
+
+The original data includes several descriptive files of interest concerning the identity of variables and observations in the data set.  The README contained in the original data (not this repo) includes the identity and contents of the files included in the data.  This is incredibly important as there are several files that the run_analysis.R script reads to combine the separated aspects of the data into a single tidy and summarized data set.  
+
+The README also explains that the experiment involved 30 volunteers carrying a Samsung Galaxy S2 smartphone while performing six activities (walking, walking upstairs, walking downstairs, sitting, standing, and laying).  The many observations taken by the smartphones' accelerometer and gyroscopes were processed to create 561 different variable analyses.  
+
+The 561 variables of the data are listed in the "features.txt" file. There is a "features_info.txt" file to further explain these 561 variables and the analysis done to obtain each value (i.e. Fast Fourier Transforms, mean, std, interquartile range, etc.).
