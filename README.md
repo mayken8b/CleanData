@@ -15,7 +15,7 @@ www.smartlab.ws
 
 In order to draw conclusions from the data set provided by this group, one can use the included
 R script to summarize the data by activity and subject participant.   A large number (561) of
-data variabless were collected and included in the group's data for each individual observation.
+data variables were collected and included in the group's data for each individual observation.
 This includes some significant processing that is best understood from the direct source: the actual
 group's data set and included information files.  This README is concerned solely with explaining the 
 usage and purpose of the script contained within this repo.  Please follow the next instructions
