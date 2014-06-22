@@ -25,6 +25,14 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 The original data includes several descriptive files of interest concerning the identity of variables and observations in the data set.  The README contained in the original data (not this repo) includes the identity and contents of the files included in the data.  This is incredibly important as there are several files that the run_analysis.R script reads to combine the separated aspects of the data into a single tidy and summarized data set.  
 
-The README also explains that the experiment involved 30 volunteers carrying a Samsung Galaxy S2 smartphone while performing six activities (walking, walking upstairs, walking downstairs, sitting, standing, and laying).  The many observations taken by the smartphones' accelerometer and gyroscopes were processed to create 561 different variable analyses.  
+The README also explains that the experiment involved 30 volunteers carrying a Samsung Galaxy S2 smartphone while performing six activities (walking, walking upstairs, walking downstairs, sitting, standing, and laying).  The many observations taken by the smartphones' accelerometer and gyroscopes were processed to create 561 different variable analyses.  The units of the variables are explained in the README, however each of these variables were also normalized to a range of [-1, 1]. 
 
 The 561 variables of the data are listed in the "features.txt" file. There is a "features_info.txt" file to further explain these 561 variables and the analysis done to obtain each value (i.e. Fast Fourier Transforms, mean, std, interquartile range, etc.).
+
+# The Alterations Performed by the Script.
+
+The run_analysis.R script is intended to tidy the data set from an amalgam of separated files into one tidy, summarized data set with labels included in the data set instead of listed in separate files.
+
+The major alterations are as follows:
+
+
